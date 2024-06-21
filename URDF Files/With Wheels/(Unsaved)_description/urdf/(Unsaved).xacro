@@ -1,0 +1,252 @@
+<?xml version="1.0" ?>
+<robot name="(Unsaved)" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find (Unsaved)_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find (Unsaved)_description)/urdf/(Unsaved).trans" />
+<xacro:include filename="$(find (Unsaved)_description)/urdf/(Unsaved).gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.25000000000019557 0.24999999999999992 0.008002902975586378" rpy="0 0 0"/>
+    <mass value="12.348675116534034"/>
+    <inertia ixx="0.416714" iyy="0.483241" izz="0.898244" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="J1_1_1">
+  <inertial>
+    <origin xyz="7.810161864463261e-09 3.176972616925067e-08 -0.057975825376308965" rpy="0 0 0"/>
+    <mass value="3.07492402154736"/>
+    <inertia ixx="0.004522" iyy="0.00539" izz="0.003488" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.03 -0.1 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/J1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.03 -0.1 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/J1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="J2_1_1">
+  <inertial>
+    <origin xyz="7.810161864463261e-09 3.176903756729743e-08 -0.057975825376308965" rpy="0 0 0"/>
+    <mass value="3.074924021547359"/>
+    <inertia ixx="0.004522" iyy="0.00539" izz="0.003488" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.03 -0.4 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/J2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.03 -0.4 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/J2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="J3_1_1">
+  <inertial>
+    <origin xyz="7.809152047233425e-09 3.176972616925067e-08 -0.057975825376309006" rpy="0 0 0"/>
+    <mass value="3.0749240215473637"/>
+    <inertia ixx="0.004522" iyy="0.00539" izz="0.003488" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.47 -0.1 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/J3_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.47 -0.1 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/J3_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="J4_1_1">
+  <inertial>
+    <origin xyz="7.809151991722274e-09 3.176903756729743e-08 -0.057975825376308986" rpy="0 0 0"/>
+    <mass value="3.074924021547362"/>
+    <inertia ixx="0.004522" iyy="0.00539" izz="0.003488" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.47 -0.4 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/J4_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.47 -0.4 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/J4_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="W1_1">
+  <inertial>
+    <origin xyz="0.030000000000000013 0.0 2.7755575615628914e-17" rpy="0 0 0"/>
+    <mass value="2.367504223745268"/>
+    <inertia ixx="0.004025" iyy="0.002723" izz="0.002723" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.1 0.08" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/W1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.1 0.08" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/W1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="W2_1">
+  <inertial>
+    <origin xyz="0.03 0.0 4.163336342344337e-17" rpy="0 0 0"/>
+    <mass value="2.367504223745268"/>
+    <inertia ixx="0.004025" iyy="0.002723" izz="0.002723" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.4 0.08" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/W2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.4 0.08" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/W2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="W3_1">
+  <inertial>
+    <origin xyz="0.02999999999999997 0.0 2.7755575615628914e-17" rpy="0 0 0"/>
+    <mass value="2.367504223745268"/>
+    <inertia ixx="0.004025" iyy="0.002723" izz="0.002723" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.44 -0.1 0.08" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/W3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.44 -0.1 0.08" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/W3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="W4_1">
+  <inertial>
+    <origin xyz="0.030000000000000138 0.0 2.7755575615628914e-17" rpy="0 0 0"/>
+    <mass value="2.367504223745268"/>
+    <inertia ixx="0.004025" iyy="0.002723" izz="0.002723" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.44 -0.4 0.08" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/W4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.44 -0.4 0.08" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/W4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="J1" type="continuous">
+  <origin xyz="0.03 0.1 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="J1_1_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="J2" type="continuous">
+  <origin xyz="0.03 0.4 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="J2_1_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="J3" type="continuous">
+  <origin xyz="0.47 0.1 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="J3_1_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="J4" type="continuous">
+  <origin xyz="0.47 0.4 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="J4_1_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="W1" type="continuous">
+  <origin xyz="-0.03 0.0 -0.08" rpy="0 0 0"/>
+  <parent link="J1_1_1"/>
+  <child link="W1_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="W2" type="continuous">
+  <origin xyz="-0.03 0.0 -0.08" rpy="0 0 0"/>
+  <parent link="J2_1_1"/>
+  <child link="W2_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="W3" type="continuous">
+  <origin xyz="-0.03 0.0 -0.08" rpy="0 0 0"/>
+  <parent link="J3_1_1"/>
+  <child link="W3_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="W4" type="continuous">
+  <origin xyz="-0.03 0.0 -0.08" rpy="0 0 0"/>
+  <parent link="J4_1_1"/>
+  <child link="W4_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+</robot>
