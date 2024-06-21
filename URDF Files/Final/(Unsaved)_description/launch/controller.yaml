@@ -1,0 +1,55 @@
+(Unsaved)_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  J1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: J1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  J2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: J2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  J3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: J3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  J4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: J4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  W1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: W1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  W2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: W2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  W3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: W3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  W4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: W4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ACTJ2 1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ACTJ2 1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ACTJ2 2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ACTJ2 2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ACTJ2 3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ACTJ2 3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ACTJ2 4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ACTJ2 4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
